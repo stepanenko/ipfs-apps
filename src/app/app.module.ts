@@ -1,6 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
+
+import { initIPFS, IPFS } from './ipfs-token';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,7 +12,12 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_INITIALIZER,
+    useFactory: initIPFS,
+    multi: true,
+    deps: [IPFS]
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

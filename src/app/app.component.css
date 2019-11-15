@@ -1,0 +1,31 @@
+
+* {
+  font-size: 16px;
+}
+
+.container {
+  padding: 2rem 4rem;
+  display: flex;
+}
+
+p {
+  padding: 0 4rem;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+  flex: 2;
+}
+
+button:hover {
+  background: #666;
+}
+
+input {
+  flex: 8;
+}
