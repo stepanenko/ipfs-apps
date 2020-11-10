@@ -5,10 +5,7 @@ import ipfs from 'ipfs';
 
 export const IPFS = new InjectionToken(
   'The IPFS Token',
-  {
-    providedIn: 'root',
-    factory: () => new ipfs()
-  }
+  { providedIn: 'root', factory: () => new ipfs() }
 );
 
 export function initIPFS(node) {
