@@ -1,5 +1,6 @@
-# Basic UI for IPFS on Angular
 
-Inspired by an article [IPFS and Angular 6](https://medium.com/@GrandSchtroumpf/ipfs-and-angular-6-6165e6fd6e5d)
+## IPFS Apps
 
-Updated all on 10.11.2020
+- ipfs and angular 11 app
+
+- ipfs and nodejs app
